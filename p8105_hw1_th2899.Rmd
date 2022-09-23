@@ -15,7 +15,7 @@ The purpose of this file is to document the steps to fulfill Homework 1.
 
 Load the Penguins dataset
 
-```{r}
+```{r load_data}
 data("penguins", package = "palmerpenguins")
 ```
 
@@ -29,15 +29,16 @@ Below is displayed a scatterplot with `flipper_length_mm` on the Y axis and `bil
 ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) + geom_point()
 ```
 
-```{r}
+```{r save_plot}
 ggsave("scatter_plot.pdf", height = 4, width = 6) 
 ```
 
 
+## Dummy code below, please ignore
 
+## Problem 2
 
-
-First we create a dataframe containing variables for our plots.
+The following code creates the data frame as instructed (I added a seed for reproducibility `set.seed(1234)`):
 
 ```{r df_create}
 set.seed(1234)
