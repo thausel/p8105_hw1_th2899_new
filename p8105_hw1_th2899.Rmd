@@ -29,7 +29,7 @@ Below is displayed a scatterplot with `flipper_length_mm` on the Y axis and `bil
 ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) + geom_point()
 ```
 
-```{r save_plot}
+```{r save_plot, warning=FALSE}
 ggsave("scatter_plot.pdf", height = 4, width = 6) 
 ```
 
